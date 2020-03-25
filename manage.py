@@ -15,5 +15,14 @@ migrate = Migrate(app, db)
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
+@manager.command
+def deploy():
+    from flask_migrate import upgrade
+    from app.cities.models import Cities
+    from app.regions.models import RegionsSchema
+    from app.users.models import Users
+
+    upgrade()
+
 if __name__ == '__main__':
     manager.run()
