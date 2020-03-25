@@ -1,0 +1,7 @@
+# Main files
+.env
+.vscode
+migrations
+
+# Python cache
+__pycache__
