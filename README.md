@@ -15,9 +15,7 @@
 
     URL: /api/users/token [GET]
     Authorization: Yes
-    Parametrs JSON:    
-        *username [String]    
-        *password [String]
+    Parametrs JSON: No
 
 ## Работа с модулями API
 
