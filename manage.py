@@ -19,7 +19,7 @@ manager.add_command('db', MigrateCommand)
 def deploy():
     from flask_migrate import upgrade
     from app.cities.models import Cities
-    from app.regions.models import RegionsSchema
+    from app.regions.models import Regions
     from app.users.models import Users
 
     upgrade()
